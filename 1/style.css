@@ -276,6 +276,15 @@ h4 {
 	.mobile-ui {
 		display: block;
 	}
+	.testclass {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+	}
+	.testclass > li {
+		padding-right: 35px;
+    	padding-top: 25px;
+	}
 }
 
 .topnav {
