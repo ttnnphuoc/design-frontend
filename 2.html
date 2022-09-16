@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Management Product List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .img-thumbnail {
+            height: 50px !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Management Product List</h1>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <input type="text" placeholder="Search text ..." id="txt-search" class="form-control"> <button class="btn btn-default" id="btn-search">Search</button>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Hình sản phẩm</th>
+            <th scope="col">Tiêu đề (tên) sản phẩm</th>
+            <th scope="col">Giá trước & sau khuyến mãi nếu có</th>
+            <th scope="col">% giảm giá</th>
+            <th scope="col">Trạng thái kho hàng</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+<script src="./2/findproduct.js"></script>
+</html>
